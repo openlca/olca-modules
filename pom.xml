@@ -10,7 +10,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.openlca</groupId>
 	<artifactId>olca-modules</artifactId>
-	<version>1.7.0</version>
+	<version>1.7.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>${project.groupId}:${project.artifactId}</name>
 	<url>http://www.openlca.org/</url>
@@ -142,5 +142,11 @@
 			 -->
 		</plugins>
 	</build>
-
+	<distributionManagement>
+		<snapshotRepository>
+			<id>olca-repo</id>
+			<name>OpenLCA Nexus at AWS EC2</name>
+			<url>http://ec2-54-90-248-145.compute-1.amazonaws.com:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
